@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html data-scrapbook-create="20220615192602912"><head><style id="st_globalStyles">
+
+
+[dark-scroll]::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+[dark-scroll]::-webkit-scrollbar-track-piece {
+  background-color: #2b2b2b;
+  border: 1px solid #1d1d1d;
+}
+
+[dark-scroll]::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: #4d4d4d;
+}
+[dark-scroll]::-webkit-scrollbar-thumb:hover {
+  background-color: #5a5a5a;
+}
+
+
+body[mode='code'] [data-id]:hover{
+  transform: none !important;
+}
+
+</style><meta charset="UTF-8"><meta name="viewport" content="width=1531, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script defer="" src="jquery.js"></script><script id="anima-hotspots-script" src="hotspots.js"></script><style id="hotspots-styles">
+    .hotspot {
+      position: absolute;
+      border: 1px solid #2a9fd8;
+      background: rgba(0, 173, 255, 0.54);
+      opacity: 0;
+      z-index: -1;
+    }
+  </style><script id="s_turbo" src="turbolinks.min.js"></script><script id="anima-overrides-script" src="overrides.js.html"></script><script src="timeline.js"></script><style>
+@import url("reset.min.css");
+
+
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url("62aa2b396fe86071499570e2.62aa2b3bc1eb5409a47ebcb5.Iq47s6K.hch.png");
+
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay.animate-appear {
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+.overlay.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --black: #000000;
+  --black-2: #00000080;
+  --lima: #4abd14;
+  --white: #ffffff;
+ 
+  --font-size-l: 30px;
+  --font-size-m: 24px;
+  --font-size-s: 20px;
+  --font-size-xl: 60px;
+  --font-size-xxl: 66px;
+  --font-size-xxxl: 100px;
+  --font-size-xxxxl: 115px;
+ 
+  --font-family-dihjauti_s-bold: "Dihjauti S-Bold", Helvetica;
+}
+.dihjautis-bold-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-dihjauti_s-bold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.dihjautis-bold-white-100px {
+  color: var(--white);
+  font-family: var(--font-family-dihjauti_s-bold);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.dihjautis-bold-white-66px {
+  color: var(--white);
+  font-family: var(--font-family-dihjauti_s-bold);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.dihjautis-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-dihjauti_s-bold);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.dihjautis-bold-white-115px {
+  color: var(--white);
+  font-family: var(--font-family-dihjauti_s-bold);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.border-1-5px-lima {
+  border: 1.5px solid var(--lima);
+}
+
+
+.desktop-12 {
+  background-color: var(--white);
+  height: 2944px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1531px;
+}
+
+.desktop-12 .image-6-LrJzyN {
+  background-color: transparent;
+  height: 736px;
+  left: 3px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 2208px;
+  width: 1531px;
+}
+
+.desktop-12 .image-7-LrJzyN {
+  background-color: transparent;
+  height: 736px;
+  left: 0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 1472px;
+  width: 1531px;
+}
+
+.desktop-12 .image-6-xrMgKC {
+  background-color: transparent;
+  height: 740px;
+  left: 3px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 732px;
+  width: 1528px;
+}
+
+.desktop-12 .image-1-LrJzyN {
+  background-color: transparent;
+  height: 732px;
+  left: 3px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 1528px;
+}
+
+
+.desktop-12 .rectangle-5-LrJzyN {
+  background-color: var(--black-2);
+  height: 2944px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 1531px;
+  z-index: 0;
+}
+
+.desktop-12 .text_label-LrJzyN {
+  background-color: transparent;
+  height: auto;
+  left: 1186px;
+  letter-spacing: 7.47px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 0.28;
+  position: absolute;
+  text-align: left;
+  top: 1010px;
+  transform: rotate(-90deg);
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 115px;
+}
+
+.desktop-12 .text_label-xrMgKC {
+  background-color: transparent;
+  height: auto;
+  left: 1208px;
+  letter-spacing: 7.47px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 0.28;
+  position: absolute;
+  text-align: center;
+  top: 1748px;
+  transform: rotate(-90deg);
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 115px;
+}
+
+.desktop-12 .title-LrJzyN {
+  background-color: transparent;
+  color: var(--lima);
+  cursor: pointer;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 211px;
+  height: auto;
+  left: 420px;
+  letter-spacing: 9.75px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 231px;
+  transition: all 1s ease;
+  width: auto;
+}
+
+.desktop-12 .title-LrJzyN:hover {
+  transform: scale(1.1);
+}
+
+.desktop-12 .text_label-2mUwJG {
+  background-color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 913px;
+  letter-spacing: 1.30px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 33px;
+  transition: all 0.2s ease;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 20px;
+}
+
+.desktop-12 .text_label-2mUwJG:hover {
+  color: #FFD7A7
+}
+
+.desktop-12 .text_label-INhigE {
+  background-color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 315px;
+  letter-spacing: 1.30px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  text-align: left;
+  top: 33px;
+  transition: all 0.2s ease;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 20px;
+}
+
+.desktop-12 .text_label-INhigE:hover {
+  color: #ffd7a7
+}
+
+.desktop-12 .text_label-C7NaVY {
+  background-color: transparent;
+  height: auto;
+  left: 636px;
+  letter-spacing: 1.30px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 33px;
+  transition: all 0.2s ease;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 20px;
+}
+
+.desktop-12 .text_label-C7NaVY:hover {
+  color: #ffd7a7
+}
+
+.desktop-12 .text_label-0uvtHM {
+  background-color: transparent;
+  height: auto;
+  left: 1223px;
+  letter-spacing: 1.30px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 33px;
+  transition: all 0.2s ease;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 20px;
+}
+
+.desktop-12 .text_label-0uvtHM:hover {
+  color: #ffd7a7
+}
+
+.desktop-12 .x-LrJzyN {
+  background-color: transparent;
+  height: 18px;
+  left: 370px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 438px;
+  width: 789px;
+}
+
+.desktop-12 .frame-111-1-LrJzyN {
+  background-color: transparent;
+  height: 101px;
+  left: -0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: -2px;
+  width: 149px;
+}
+
+.desktop-12 .x09-photo-room-2-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 287px;
+  left: 87px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 766px;
+  transition: all 0.8s ease;
+  width: 541px;
+}
+
+.desktop-12 .x09-photo-room-2-LrJzyN:hover {
+  transform: rotate(5deg);
+}
+
+.desktop-12 .ellipse-61-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 568px;
+  position: absolute;
+  top: 803px;
+  width: 125px;
+}
+
+.desktop-12 .ellipse-62-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 587px;
+  position: absolute;
+  top: 794px;
+  width: 125px;
+}
+
+
+.desktop-12 .rectangle-22-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  left: 620px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 841px;
+  transition: all 0.2s ease;
+  width: 40px;
+  ;
+}
+
+.desktop-12 .rectangle-22-LrJzyN:hover {
+  transform: scale(1.1);
+}
+
+.desktop-12 .text_label-xaAKKv {
+  background-color: transparent;
+  color: var(--white);
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 60px;
+  height: auto;
+  left: 381px;
+  letter-spacing: 4.29px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 31px #000000d6;
+  top: 918px;
+  width: auto;
+}
+
+.desktop-12 .text_label-1xBRY0 {
+  background-color: transparent;
+  color: var(--white);
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 60px;
+  height: auto;
+  left: 915px;
+  letter-spacing: 4.29px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 31px #000000d6;
+  top: 1151px;
+  width: auto;
+}
+
+.desktop-12 .pteranodon-in-flight-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 351px;
+  left: 970px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 909px;
+  transition: all 0.8s ease;
+  width: 526px;
+}
+
+.desktop-12 .pteranodon-in-flight-LrJzyN:hover {
+  transform: rotate(-5deg);
+}
+
+.desktop-12 .ellipse-66-LrJzyN {
+  background-color: transparent;
+  height: 116px;
+  left: 890px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1024px;
+  width: 106px;
+}
+
+.desktop-12 .ellipse-67-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 871px;
+  position: absolute;
+  top: 1024px;
+  width: 125px;
+}
+
+.desktop-12 .ellipse-68-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 890px;
+  position: absolute;
+  top: 1015px;
+  width: 125px;
+}
+
+.desktop-12 .rectangle-25-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  left: 923px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 1062px;
+  transition: all 0.2s ease;
+  width: 40px;
+}
+
+.desktop-12 .rectangle-25-LrJzyN:hover {
+  transform: scale(1.1);
+}
+
+.desktop-12 .u83-photo-room-2-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 216px;
+  left: 87px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 1200px;
+  transition: all 0.8s ease;
+  width: 475px;
+}
+
+.desktop-12 .u83-photo-room-2-LrJzyN:hover {
+  transform: rotate(5deg);
+}
+
+.desktop-12 .ellipse-63-LrJzyN {
+  background-color: transparent;
+  height: 116px;
+  left: 765px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1313px;
+  width: 106px;
+}
+
+.desktop-12 .ellipse-64-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 746px;
+  position: absolute;
+  top: 1313px;
+  width: 125px;
+}
+
+.desktop-12 .ellipse-65-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 765px;
+  position: absolute;
+  top: 1304px;
+  width: 125px;
+}
+
+.desktop-12 .rectangle-23-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  left: 798px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 1351px;
+  transition: all 0.2s ease;
+  width: 40px;
+}
+
+.desktop-12 .rectangle-23-LrJzyN:hover {
+  transform: scale(1.1);
+}
+
+.desktop-12 .ellipse-69-LrJzyN {
+  background-color: transparent;
+  height: 116px;
+  left: 982px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1652px;
+  width: 106px;
+}
+
+.desktop-12 .brachiosaurus-photo-room-2-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 558px;
+  left: 911px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 1304px;
+  transition: all 0.8s ease;
+  width: 621px;
+}
+
+.desktop-12 .brachiosaurus-photo-room-2-LrJzyN:hover {
+  transform: rotate(-5deg);
+}
+
+.desktop-12 .ellipse-70-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 963px;
+  position: absolute;
+  top: 1652px;
+  width: 125px;
+}
+
+.desktop-12 .ellipse-71-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 982px;
+  position: absolute;
+  top: 1643px;
+  width: 125px;
+}
+
+.desktop-12 .rectangle-26-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  left: 1015px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 1690px;
+  transition: all 0.2s ease;
+  width: 40px;
+}
+
+.desktop-12 .rectangle-26-LrJzyN:hover {
+  transform: scale(1.1);
+}
+
+.desktop-12 .ellipse-72-LrJzyN {
+  background-color: transparent;
+  height: 116px;
+  left: 596px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1723px;
+  width: 106px;
+}
+
+.desktop-12 .ellipse-73-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 577px;
+  position: absolute;
+  top: 1723px;
+  width: 125px;
+}
+
+.desktop-12 .ellipse-74-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 596px;
+  position: absolute;
+  top: 1714px;
+  width: 125px;
+}
+
+.desktop-12 .rectangle-27-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  left: 629px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 1761px;
+  transition: all 0.2s ease;
+  width: 40px;
+}
+
+.desktop-12 .rectangle-27-LrJzyN:hover {
+  transform: scale(1.1);
+}
+
+.desktop-12 .ellipse-75-LrJzyN {
+  background-color: transparent;
+  height: 116px;
+  left: 772px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1944px;
+  width: 106px;
+}
+
+.desktop-12 .ellipse-76-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 753px;
+  position: absolute;
+  top: 1944px;
+  width: 125px;
+}
+
+.desktop-12 .ellipse-77-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 772px;
+  position: absolute;
+  top: 1935px;
+  width: 125px;
+}
+
+.desktop-12 .rectangle-28-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  left: 805px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 1982px;
+  transition: all 0.2s ease;
+  width: 40px;
+}
+
+.desktop-12 .rectangle-28-LrJzyN:hover {
+  transform: scale(1.1);
+}
+
+.desktop-12 .text_label-1FXtRy {
+  background-color: transparent;
+  height: auto;
+  left: 418px;
+  letter-spacing: 4.29px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 31px #000000d6;
+  top: 1303px;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 60px;
+}
+
+.desktop-12 .text_label-TrmnDl {
+  background-color: transparent;
+  height: auto;
+  left: 721px;
+  letter-spacing: 4.29px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 31px #000000d6;
+  top: 1536px;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 60px;
+}
+
+.desktop-12 .x1-56-photo-room-2-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 363px;
+  left: 53px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 1643px;
+  transition: all 0.8s ease;
+  width: 581px;
+}
+
+.desktop-12 .x1-56-photo-room-2-LrJzyN:hover {
+  transform: rotate(5deg);
+}
+
+.desktop-12 .x5e03ff82dffc9f04d313-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 379px;
+  left: 940px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 1824px;
+  transition: all 0.8s ease;
+  width: 501px;
+}
+
+.desktop-12 .x5e03ff82dffc9f04d313-LrJzyN:hover {
+  transform: rotate(-5deg);
+}
+
+.desktop-12 .text_label-O4iK6v {
+  background-color: transparent;
+  height: auto;
+  left: 293px;
+  letter-spacing: 4.29px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 31px #000000d6;
+  top: 1861px;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 60px;
+}
+
+.desktop-12 .text_label-WhkkIH {
+  background-color: transparent;
+  height: auto;
+  left: 706px;
+  letter-spacing: 4.29px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 31px #000000d6;
+  top: 2058px;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 60px;
+}
+
+.desktop-12 .vector-8-LrJzyN {
+  background-color: transparent;
+  height: 2900px;
+  left: 49px;
+  position: absolute;
+  top: 115px;
+  width: 3px;
+}
+
+.desktop-12 .vector-8-LrJzyN1 {
+  background-color: transparent;
+  height: 2900px;
+  left: 49px;
+  position: absolute;
+  top: 615px;
+  width: 3px;
+}
+
+.desktop-12 .ellipse-16-LrJzyN {
+  background-color: var(--lima);
+  border-radius: 13.5px;
+  height: 27px;
+  left: 37px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 801px;
+  width: 27px;
+}
+
+.desktop-12 .ellipse-17-LrJzyN {
+  background-color: var(--black);
+  border-radius: 9.5px;
+  height: 19px;
+  left: 41px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 805px;
+  width: 19px;
+}
+
+.desktop-12 .ellipse-20-LrJzyN {
+  background-color: var(--lima);
+  border-radius: 13.5px;
+  height: 27px;
+  left: 37px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1326px;
+  width: 27px;
+}
+
+.desktop-12 .ellipse-21-LrJzyN {
+  background-color: var(--black);
+  border-radius: 9.5px;
+  height: 19px;
+  left: 41px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1330px;
+  width: 19px;
+}
+
+.desktop-12 .ellipse-26-LrJzyN {
+  background-color: var(--lima);
+  border-radius: 13.5px;
+  height: 27px;
+  left: 37px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2064px;
+  width: 27px;
+}
+
+.desktop-12 .ellipse-27-LrJzyN {
+  background-color: var(--black);
+  border-radius: 9.5px;
+  height: 19px;
+  left: 41px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2068px;
+  width: 19px;
+}
+
+.desktop-12 .ellipse-24-LrJzyN {
+  background-color: var(--lima);
+  border-radius: 13.5px;
+  height: 27px;
+  left: 37px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1817px;
+  width: 27px;
+}
+
+.desktop-12 .ellipse-25-LrJzyN {
+  background-color: var(--black);
+  border-radius: 9.5px;
+  height: 19px;
+  left: 41px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1821px;
+  width: 19px;
+}
+
+.desktop-12 .ellipse-22-LrJzyN {
+  background-color: var(--lima);
+  border-radius: 13.5px;
+  height: 27px;
+  left: 37px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1606px;
+  width: 27px;
+}
+
+.desktop-12 .ellipse-23-LrJzyN {
+  background-color: var(--black);
+  border-radius: 9.5px;
+  height: 19px;
+  left: 41px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1610px;
+  width: 19px;
+}
+
+.desktop-12 .ellipse-18-LrJzyN {
+  background-color: var(--lima);
+  border-radius: 13.5px;
+  height: 27px;
+  left: 37px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1077px;
+  width: 27px;
+}
+
+.desktop-12 .ellipse-19-LrJzyN {
+  background-color: var(--black);
+  border-radius: 9.5px;
+  height: 19px;
+  left: 41px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1081px;
+  width: 19px;
+}
+
+.desktop-12 .text_label-B9TVBn {
+  background-color: transparent;
+  height: auto;
+  left: 1115px;
+  letter-spacing: 7.47px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 0.28;
+  position: absolute;
+  text-align: center;
+  top: 2510px;
+  transform: rotate(-90deg);
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 130px;
+}
+
+.desktop-12 .x9b2ce22d7f654aeb06ad-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 406px;
+  left: 42px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 2165px;
+  transition: all 0.8s ease;
+  width: 595px;
+}
+
+.desktop-12 .x9b2ce22d7f654aeb06ad-LrJzyN:hover {
+  transform: rotate(5deg);
+}
+
+.desktop-12 .ellipse-78-LrJzyN {
+  background-color: transparent;
+  height: 116px;
+  left: 656px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2337px;
+  width: 106px;
+}
+
+.desktop-12 .ellipse-79-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 637px;
+  position: absolute;
+  top: 2337px;
+  width: 125px;
+}
+
+.desktop-12 .ellipse-80-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 656px;
+  position: absolute;
+  top: 2328px;
+  width: 125px;
+}
+
+.desktop-12 .rectangle-29-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  left: 689px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 2375px;
+  transition: all 0.2s ease;
+  width: 40px;
+}
+
+.desktop-12 .rectangle-29-LrJzyN:hover {
+  transform: scale(1.1);
+}
+
+.desktop-12 .ellipse-81-LrJzyN {
+  background-color: transparent;
+  height: 116px;
+  left: 982px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2608px;
+  width: 106px;
+}
+
+.desktop-12 .ellipse-82-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 963px;
+  position: absolute;
+  top: 2608px;
+  width: 125px;
+}
+
+.desktop-12 .ellipse-83-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 982px;
+  position: absolute;
+  top: 2599px;
+  width: 125px;
+}
+
+.desktop-12 .rectangle-30-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  left: 1015px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 2646px;
+  transition: all 0.2s ease;
+  width: 40px;
+}
+
+.desktop-12 .rectangle-30-LrJzyN:hover {
+  transform: scale(1.1);
+}
+
+.desktop-12 .ellipse-84-LrJzyN {
+  background-color: transparent;
+  height: 116px;
+  left: 715px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2718px;
+  width: 106px;
+}
+
+.desktop-12 .ellipse-85-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 696px;
+  position: absolute;
+  top: 2718px;
+  width: 125px;
+}
+
+.desktop-12 .ellipse-86-LrJzyN {
+  background-color: transparent;
+  border-radius: 62.5px;
+  height: 125px;
+  left: 715px;
+  position: absolute;
+  top: 2709px;
+  width: 125px;
+}
+
+.desktop-12 .rectangle-31-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  left: 748px;
+  mix-blend-mode: normal;
+  pointer-events: auto;
+  position: absolute;
+  top: 2756px;
+  transition: all 0.2s ease;
+  width: 40px;
+}
+
+.desktop-12 .rectangle-31-LrJzyN:hover {
+  transform: scale(1.1);
+}
+
+.desktop-12 .text_label-mjkZs3 {
+  background-color: transparent;
+  height: auto;
+  left: 567px;
+  letter-spacing: 4.29px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 31px #000000d6;
+  top: 2230px;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 60px;
+}
+
+.desktop-12 .image-6-2mUwJG {
+  background-color: transparent;
+  cursor: pointer;
+  height: 328px;
+  left: 1031px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 2412px;
+  transition: all 0.8s ease;
+  width: 425px;
+}
+
+.desktop-12 .image-6-2mUwJG:hover {
+  transform: rotate(-5deg);
+}
+
+.desktop-12 .text_label-GscbIg {
+  background-color: transparent;
+  height: auto;
+  left: 673px;
+  letter-spacing: 4.29px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 31px #000000d6;
+  top: 2494px;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 60px;
+}
+
+.desktop-12 .text_label-6q7089 {
+  background-color: transparent;
+  height: auto;
+  left: 558px;
+  letter-spacing: 4.29px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  text-shadow: 0px 0px 31px #000000d6;
+  top: 2818px;
+  width: auto;
+  font: var(--font-family-dihjauti_s-bold);
+  font-size: 60px;
+}
+
+.desktop-12 .x015-4-photo-room-2-LrJzyN {
+  background-color: transparent;
+  cursor: pointer;
+  height: 318px;
+  left: 80px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  pointer-events: auto;
+  position: absolute;
+  top: 2626px;
+  transition: all 0.8s ease;
+  width: 618px;
+}
+
+.desktop-12 .x015-4-photo-room-2-LrJzyN:hover {
+  transform: rotate(5deg);
+}
+
+.desktop-12 .ellipse-32-LrJzyN {
+  background-color: var(--lima);
+  border-radius: 13.5px;
+  height: 27px;
+  left: 40px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2821px;
+  width: 27px;
+}
+
+.desktop-12 .ellipse-33-LrJzyN {
+  background-color: var(--black);
+  border-radius: 9.5px;
+  height: 19px;
+  left: 44px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2825px;
+  width: 19px;
+}
+
+.desktop-12 .ellipse-30-LrJzyN {
+  background-color: var(--lima);
+  border-radius: 13.5px;
+  height: 27px;
+  left: 40px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2572px;
+  width: 27px;
+}
+
+.desktop-12 .ellipse-31-LrJzyN {
+  background-color: var(--black);
+  border-radius: 9.5px;
+  height: 19px;
+  left: 44px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2576px;
+  width: 19px;
+}
+
+.desktop-12 .ellipse-28-LrJzyN {
+  background-color: var(--lima);
+  border-radius: 13.5px;
+  height: 27px;
+  left: 40px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2357px;
+  width: 27px;
+}
+
+.desktop-12 .ellipse-29-LrJzyN {
+  background-color: var(--black);
+  border-radius: 9.5px;
+  height: 19px;
+  left: 44px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2361px;
+  width: 19px;
+}
+
+a.idTop {
+ position: fixed;
+ z-index: 9999;
+ color: #fff;
+ text-decoration: none;
+ font: var(--font-family-dihjauti_s-bold);
+}
+
+a.idTop:hover {
+ opacity: 1;
+ color: #ffc971;
+}
+
+a.idTop2 {
+ position: fixed;
+ z-index: 9999;
+ text-decoration: none;
+}
+
+.idTop1 {
+ position: fixed;
+ z-index: 9999;
+ height: 130px;
+}
+
+a.idTop3 {
+ position: fixed;
+ z-index: 9999;
+ color: #ffffff;
+ text-decoration: none;
+ font: var(--font-family-dihjauti_s-bold);
+}
+
+a.idTop3:hover {
+ opacity: 1;
+ color: #4abd14;
+}
+
+</style></head><body 
+style="margin: 0px; background: rgb(255, 255, 255); overflow-x: hidden;" dark-scroll="">
+<input type="hidden" id="anPageName" name="page" value="desktop-12">
+<div class="container-center-horizontal"><form class="desktop-12 screen " data-id="28:3" name="form9" action="https://yellow-paper-3530.animaapp.io/form9" method="post">
+  <input type="text" name="trapit" value="" style="display:none;">
+  <img class="idTop1" src="Rectangle32.png">
+  <img class="image-6-LrJzyN" data-id="47:3" src="image-6@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/image-6@1x.png">
+  <img class="image-7-LrJzyN" data-id="47:5" src="image-7@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/image-7@1x.png">
+  <img class="image-6-xrMgKC" data-id="47:8" src="image-6-1@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/image-6-1@1x.png">
+  <img class="image-1-LrJzyN" data-id="27:16" src="image-1@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/image-1@1x.png">
+  <div class="rectangle-5-LrJzyN" data-id="2:8"></div>
+  <div id="el1" class="text_label-LrJzyN dihjautis-bold-white-115px" data-id="47:66">Меловой</div>
+  <div id="el2" class="text_label-xrMgKC dihjautis-bold-white-115px" data-id="47:67">Юрский</div><h1 class="title-LrJzyN smart-layers-pointers" data-id="2:9">Ersaurs</h1><div class="text_label-2mUwJG smart-layers-pointers dihjautis-bold-white-20px" data-id="2:10"><a href="#el4" class="idTop">Триасовый</a></div><div class="text_label-INhigE smart-layers-pointers dihjautis-bold-white-20px" data-id="2:11"><a href="#el1" class="idTop">Меловой</a></div><div class="text_label-C7NaVY dihjautis-bold-white-20px" data-id="2:12"><a href="#el2" class="idTop">Юрский</a></div><div class="text_label-0uvtHM dihjautis-bold-white-20px" data-id="2:13"><a class="idTop3" href="cont.html">Контакты</a></div><img class="x-LrJzyN" data-id="2:14" src="----------------------------------------------------------------@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/----------------------------------------------------------------@1x.png">
+  <a class="idTop2"><img class="frame-111-1-LrJzyN" data-id="2:15" src="frame-111-1@2x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/frame-111-1@2x.png"></a><img class="x09-photo-room-2-LrJzyN smart-layers-pointers" data-id="47:9" src="09-photoroom-2@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/09-photoroom-2@1x.png"><div class="ellipse-61-LrJzyN border-1-5px-lima" data-id="47:10"></div><div class="ellipse-62-LrJzyN border-1-5px-lima" data-id="47:11">
+
+  </div><a href="dino1.html"><img class="rectangle-22-LrJzyN smart-layers-pointers" data-id="47:12" src="rectangle-22@2x.svg"></a><div class="text_label-xaAKKv" data-id="47:17">Тираннозавр</div><div class="text_label-1xBRY0" data-id="47:18">Птеродактиль</div><img class="pteranodon-in-flight-LrJzyN smart-layers-pointers" data-id="47:20" src="pteranodon-in-flight-roger-harrisscience-photo-library-photoroom@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/pteranodon-in-flight-roger-harrisscience-photo-library-photoroom@1x.png">
+  <img class="ellipse-66-LrJzyN" data-id="47:21" src="ellipse-66@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/ellipse-66@2x.svg"><div class="ellipse-67-LrJzyN border-1-5px-lima" data-id="47:22"></div>
+  <div class="ellipse-68-LrJzyN border-1-5px-lima" data-id="47:23"></div><a><img class="rectangle-25-LrJzyN smart-layers-pointers" data-id="47:24" src="rectangle-22@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/rectangle-22@2x.svg"></a>
+  <img class="u83-photo-room-2-LrJzyN smart-layers-pointers" data-id="47:25" src="u83-photoroom-2@2x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/u83-photoroom-2@2x.png"><img class="ellipse-63-LrJzyN" data-id="47:13" src="ellipse-66@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/ellipse-66@2x.svg">
+  <div class="ellipse-64-LrJzyN border-1-5px-lima" data-id="47:14"></div><div class="ellipse-65-LrJzyN border-1-5px-lima" data-id="47:15"></div><a><img class="rectangle-23-LrJzyN smart-layers-pointers" data-id="47:16" src="rectangle-22@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/rectangle-22@2x.svg"></a><img class="ellipse-69-LrJzyN" data-id="47:36" src="ellipse-66@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/ellipse-66@2x.svg">
+  <img class="brachiosaurus-photo-room-2-LrJzyN smart-layers-pointers" data-id="47:35" src="brachiosaurus-photoroom-2@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/brachiosaurus-photoroom-2@1x.png">
+  <div class="ellipse-70-LrJzyN border-1-5px-lima" data-id="47:37"></div><div class="ellipse-71-LrJzyN border-1-5px-lima" data-id="47:38"></div><a><img class="rectangle-26-LrJzyN smart-layers-pointers" data-id="47:39" src="rectangle-22@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/rectangle-22@2x.svg"></a><img class="ellipse-72-LrJzyN" data-id="47:40" src="ellipse-66@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/ellipse-66@2x.svg">
+  <div class="ellipse-73-LrJzyN border-1-5px-lima" data-id="47:41"></div><div class="ellipse-74-LrJzyN border-1-5px-lima" data-id="47:42"></div><a href="dino5.html"><img class="rectangle-27-LrJzyN smart-layers-pointers" data-id="47:43" src="rectangle-22@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/rectangle-22@2x.svg"></a><img class="ellipse-75-LrJzyN" data-id="47:44" src="ellipse-66@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/ellipse-66@2x.svg">
+  <div class="ellipse-76-LrJzyN border-1-5px-lima" data-id="47:45"></div><div class="ellipse-77-LrJzyN border-1-5px-lima" data-id="47:46"></div><a href="dino6.html"><img class="rectangle-28-LrJzyN smart-layers-pointers" data-id="47:47" src="rectangle-22@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/rectangle-22@2x.svg"></a><div class="text_label-1FXtRy dihjautis-bold-white-66px" data-id="47:19">Изизавр</div><div class="text_label-TrmnDl dihjautis-bold-white-66px" data-id="47:26">Брахиозавр</div><img class="x1-56-photo-room-2-LrJzyN smart-layers-pointers" data-id="47:31" src="1-56-photoroom-2@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/1-56-photoroom-2@1x.png"><img class="x5e03ff82dffc9f04d313-LrJzyN smart-layers-pointers" data-id="47:34" src="5e03ff82dffc9f04d31325d41764105d033de643r1-1054-798v2-uhq-photor@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/5e03ff82dffc9f04d31325d41764105d033de643r1-1054-798v2-uhq-photor@1x.png">
+  <div class="text_label-O4iK6v dihjautis-bold-white-66px" data-id="47:32">Стегозавр</div><div class="text_label-WhkkIH dihjautis-bold-white-66px" data-id="47:33">Мегалозавр</div><img class="vector-8-LrJzyN1" data-id="47:69" src="vector-8@1x.svg"anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/vector-8@1x.svg"><img class="vector-8-LrJzyN" data-id="47:69" src="vector-8@1x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/vector-8@1x.svg"><div class="ellipse-16-LrJzyN" data-id="47:70"></div><div class="ellipse-17-LrJzyN" data-id="47:71"></div><div class="ellipse-20-LrJzyN" data-id="47:74"></div><div class="ellipse-21-LrJzyN" data-id="47:75"></div>
+  <div class="ellipse-26-LrJzyN" data-id="47:82"></div><div class="ellipse-27-LrJzyN" data-id="47:83"></div><div class="ellipse-24-LrJzyN" data-id="47:80"></div><div class="ellipse-25-LrJzyN" data-id="47:81"></div><div class="ellipse-22-LrJzyN" data-id="47:78"></div><div class="ellipse-23-LrJzyN" data-id="47:79"></div><div class="ellipse-18-LrJzyN" data-id="47:72"></div><div class="ellipse-19-LrJzyN" data-id="47:73"></div><div id="el4" class="text_label-B9TVBn dihjautis-bold-white-115px" data-id="47:68">Триасовый</div><img class="x9b2ce22d7f654aeb06ad-LrJzyN smart-layers-pointers" data-id="47:50" src="9b2ce22d7f654aeb06add6a4a4ca18c2-photoroom-2@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/9b2ce22d7f654aeb06add6a4a4ca18c2-photoroom-2@1x.png"><img class="ellipse-78-LrJzyN" data-id="47:54" src="ellipse-66@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/ellipse-66@2x.svg">
+  <div class="ellipse-79-LrJzyN border-1-5px-lima" data-id="47:55"></div><div class="ellipse-80-LrJzyN border-1-5px-lima" data-id="47:56"></div><a href="dino7.html"><img class="rectangle-29-LrJzyN smart-layers-pointers" data-id="47:57" src="rectangle-22@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/rectangle-22@2x.svg"></a><img class="ellipse-81-LrJzyN" data-id="47:58" src="ellipse-66@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/ellipse-66@2x.svg"><div class="ellipse-82-LrJzyN border-1-5px-lima" data-id="47:59"></div>
+  <div class="ellipse-83-LrJzyN border-1-5px-lima" data-id="47:60"></div><a href="dino8.html"><img class="rectangle-30-LrJzyN smart-layers-pointers" data-id="47:61" src="rectangle-22@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/rectangle-22@2x.svg"></a><img class="ellipse-84-LrJzyN" data-id="47:62" src="ellipse-66@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/ellipse-66@2x.svg">
+  <div class="ellipse-85-LrJzyN border-1-5px-lima" data-id="47:63"></div><div class="ellipse-86-LrJzyN border-1-5px-lima" data-id="47:64"></div><a href="dino9.html"><img class="rectangle-31-LrJzyN smart-layers-pointers" data-id="47:65" src="rectangle-22@2x.svg" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/rectangle-22@2x.svg"></a><div class="text_label-mjkZs3 dihjautis-bold-white-66px" data-id="47:48">Меланорозавр</div><img class="image-6-2mUwJG smart-layers-pointers" data-id="47:52" src="image-6-2@2x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/image-6-2@2x.png">
+  <div class="text_label-GscbIg dihjautis-bold-white-66px" data-id="47:49">Платеозавр</div><div class="text_label-6q7089 dihjautis-bold-white-66px" data-id="47:53">Тава</div><img class="x015-4-photo-room-2-LrJzyN smart-layers-pointers" data-id="47:51" src="015-4-photoroom-2@1x.png" anima-src="https://cdn.animaapp.com/projects/62aa2df5a553c32c0abd2b69/releases/62aa2e7454e944ad17ca2720/img/015-4-photoroom-2@1x.png">
+  <div class="ellipse-32-LrJzyN" data-id="47:88"></div><div class="ellipse-33-LrJzyN" data-id="47:89"></div><div class="ellipse-30-LrJzyN" data-id="47:86"></div><div class="ellipse-31-LrJzyN" data-id="47:87"></div><div class="ellipse-28-LrJzyN" data-id="47:84"></div>
+  <div class="ellipse-29-LrJzyN" data-id="47:85"></div></form></div><script src="free-website-banner-anima-5.min.js" async=""></script><script defer="" src="restart-btn.min.js"></script><script>
+
